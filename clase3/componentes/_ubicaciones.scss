@@ -7,6 +7,8 @@
     border-radius: 20px;
     background-color: $color-claro;
     color: $color-primario;
+    @include caja;
+
     i {
         display: block;
         float: left;
@@ -24,5 +26,6 @@
         text-transform: uppercase;
         font-size: 12px;
         font-family: $Fuente2;
+        color: get-opacity($color-primario, .50);
     }
 }
